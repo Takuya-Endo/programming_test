@@ -2,20 +2,22 @@ puts '約数の練習'
 
 
 def divisor_array
-
-  gets_divisor = 10
   
-  n = gets_divisor
+  gets_divisor = 30
+  
   divisor = []
-  while n != 1 do
-    if gets_divisor % n == 0
-      divisor.push(gets_divisor / n)
+  dividing_number = gets_divisor
+  
+  while dividing_number >= 1 do
+    
+    if gets_divisor % dividing_number == 0
+      divisor.push(gets_divisor / dividing_number)
     end
-    n = n - 1
+    
+    dividing_number = dividing_number - 1
   end
   
   puts divisor
-  
   
 end
 
