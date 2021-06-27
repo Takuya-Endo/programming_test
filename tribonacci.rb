@@ -1,16 +1,14 @@
 puts 'トリボナッチ数列の練習'
 
-tribonacci = [0, 0, 1]
-
-a = 0 #aは取りぼなっち数列のn番目
-i = tribonacci[a] + tribonacci[a + 1] + tribonacci[a + 2] #iはn番目の数字
-tribonacci.push(i)
-
-for n in 1..6 do
-  n = a + 1
-  i = tribonacci[n] + tribonacci[n + 1] + tribonacci[n + 2]
-  tribonacci.push(i)
-  a = n
+def tribonacci
+  ary = [0, 0, 1]
+  n_th = 0
+  for n_th in 0..6 do
+    nth_number = ary[n_th] + ary[n_th + 1] + ary[n_th + 2]
+    ary.push(nth_number)
+    n_th = n_th + 1
+  end
+  puts ary
 end
 
 puts tribonacci
