@@ -22,7 +22,7 @@ end
 
 def pythagorean_triple_abc
   
-  max = 500
+  max = 100
   
   for a in 1..max do
     for b in a..max do
