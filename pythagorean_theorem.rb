@@ -15,9 +15,11 @@ def pythagorean_triple_array
     end
   end
   
-  puts pythagorean_triple
+  print pythagorean_triple
 
 end
+
+puts pythagorean_triple_array
 
 
 def pythagorean_triple_abc
@@ -41,5 +43,4 @@ def pythagorean_triple_abc
   
 end
 
-puts pythagorean_triple_abc
-
+# puts pythagorean_triple_abc
